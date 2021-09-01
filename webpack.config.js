@@ -17,7 +17,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Currency Exchanger',
+      template: path.resolve(__dirname, 'src/index.html'),
+      title: 'Epic RPG',
       inject: 'body',
     }),
     new CopyWebpackPlugin({
@@ -25,10 +26,12 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/assets'),
           to: path.resolve(__dirname, 'dist/assets'),
+          noErrorOnMissing: true,
         },
         {
           from: path.resolve(__dirname, 'src/assets/favicon.ico'),
           to: path.resolve(__dirname, 'dist/favicon.ico'),
+          noErrorOnMissing: true,
         },
         {
           from: path.resolve(__dirname, 'tests/coverage/lcov-report'),
