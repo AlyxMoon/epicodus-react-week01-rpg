@@ -1,6 +1,7 @@
 import * as gameState from '@/lib/state'
+import '@/styles/main.css'
 
-let player
+let player = gameState.createNewHero()
 let enemy
 
 const selectors = {

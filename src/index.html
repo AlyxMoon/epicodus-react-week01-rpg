@@ -7,43 +7,64 @@
   <title>Epic RPG</title>
 </head>
 <body>
-  <h1>RPG</h1>
-  <h5>Create your Hero</h5>
-  <button class="btn player-create">Create Player</button>
+  <main>
+    <h1>RPG</h1>
+    <h5>Create your Hero</h5>
 
-  <button 
-    class="btn enemy-create" 
-    data-func="createNewRat"
-  >
-    Create Rat
-  </button>
-  <button 
-    class="btn enemy-create" 
-    data-func="createNewSlime"
-  >
-    Create Slime
-  </button>
-  <button 
-    class="btn enemy-create" 
-    data-func="createNewSkeleton"
-  >
-    Create Skeleton
-  </button>
+    <div class="buttons">
+      <button class="btn player-create">Create Player</button>
 
-  <div class="display">
-    <div id="stats">
-      <div class="player-name"></div>
-      <div class="player-health"></div>
-      <div class="player-attack"></div>
-      <div class="player-defense"></div>    
-
-      <div class="battle">
-        <div class="enemy-name"></div>
-        <div class="enemy-health"></div>
-        <div class="enemy-attack"></div>
-        <div class="enemy-defense"></div>
-      </div>
+      <button 
+        class="btn enemy-create" 
+        data-func="createNewRat"
+      >
+        Create Rat
+      </button>
+      <button 
+        class="btn enemy-create" 
+        data-func="createNewSlime"
+      >
+        Create Slime
+      </button>
+      <button 
+        class="btn enemy-create" 
+        data-func="createNewSkeleton"
+      >
+        Create Skeleton
+      </button>
     </div>
-  </div>
+  </main>
+
+  <footer class="stats">
+    <h3>You!</h3>
+    <dl>
+      <dt>Name</dt>
+      <dd class="player-name"></dd>
+
+      <dt>Health</dt>
+      <dd class="player-health"></dd>
+      
+      <dt>Attack</dt>
+      <dd class="player-attack"></dd>
+    
+      <dt>Defense</dt>
+      <dd class="player-defense"></dd>
+    </dl>
+
+    <h3>Enemy!</h3>
+    <dl>
+      <dt>Name</dt>
+      <dd class="enemy-name"></dd>
+      
+      <dt>Health</dt>
+      <dd class="enemy-health"></dd>
+
+      <dt>Attack</dt>
+      <dd class="enemy-attack"></dd>
+
+      <dt>Defense</dt>
+      <dd class="enemy-defense"></dd>
+    </dl>
+  </footer>
 </body>
 </html>
