@@ -47,6 +47,14 @@ const updateDisplay = () => {
   }
 }
 
+const enemyCreateClickEvent = (event) => {
+  const currentElement = event.target
+
+  enemy = gameState[currentElement.dataset.func]()
+
+  updateDisplay()
+}
+
 const addEventListeners = () => {
   document.querySelector(selectors.playerCreate)
     .addEventListener('click', () => {
@@ -54,10 +62,10 @@ const addEventListeners = () => {
       updateDisplay()
     })
 
-  document.querySelector(selectors.enemyCreate)
-    .addEventListener('click', () => {
-      enemy = gameState.createNewRat()
-      updateDisplay()
+  document
+    .querySelectorAll(selectors.enemyCreate)
+    .forEach(element => {
+      element.addEventListener('click', enemyCreateClickEvent)
     })
 }
 

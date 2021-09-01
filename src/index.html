@@ -10,8 +10,26 @@
   <h1>RPG</h1>
   <h5>Create your Hero</h5>
   <button class="btn player-create">Create Player</button>
-  <button class="btn enemy-create">Create Enemy</button>
-  
+
+  <button 
+    class="btn enemy-create" 
+    data-func="createNewRat"
+  >
+    Create Rat
+  </button>
+  <button 
+    class="btn enemy-create" 
+    data-func="createNewSlime"
+  >
+    Create Slime
+  </button>
+  <button 
+    class="btn enemy-create" 
+    data-func="createNewSkeleton"
+  >
+    Create Skeleton
+  </button>
+
   <div class="display">
     <div id="stats">
       <div class="player-name"></div>
