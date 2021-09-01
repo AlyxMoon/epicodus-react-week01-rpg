@@ -77,3 +77,6 @@ main h1, main h5 {
   justify-content: center;
   gap: 0.5em;
 }
+.characters {
+  padding: 4em;
+}

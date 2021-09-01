@@ -1,5 +1,6 @@
 import * as gameState from '@/lib/state'
 import '@/styles/main.css'
+import '@/units.js'
 
 let player = gameState.createNewHero()
 let enemy
